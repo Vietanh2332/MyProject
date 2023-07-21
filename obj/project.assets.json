@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\TUAN\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Vanh2302\\MyProject\\MyProject.csproj",
+      "projectUniqueName": "D:\\V-ANH\\vana\\MyProject\\MyProject.csproj",
       "projectName": "MyProject",
-      "projectPath": "D:\\Vanh2302\\MyProject\\MyProject.csproj",
-      "packagesPath": "C:\\Users\\TUAN\\.nuget\\packages\\",
-      "outputPath": "D:\\Vanh2302\\MyProject\\obj\\",
+      "projectPath": "D:\\V-ANH\\vana\\MyProject\\MyProject.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\V-ANH\\vana\\MyProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TUAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
