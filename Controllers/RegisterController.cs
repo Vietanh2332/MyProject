@@ -5,33 +5,47 @@ namespace MyProject.Controllers
 {
     public class RegisterController : Controller
     {
-        // Phương thức GET để hiển thị form đăng nhập
+        // Phương thức GET để hiển thị form đăng ký
         [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
-        // Phương thức POST để xử lý yêu cầu khi nhấn nút Sign In
         [HttpPost]
-        public IActionResult SignUp(string email, string password, bool rememberMe)
+        public IActionResult Register(string email, string password, string repeatpassword)
         {
-            // Gọi phương thức CheckCredentials từ LoginModel để kiểm tra thông tin đăng nhập
-            bool isValidCredentials = LoginModel.CheckCredentials(email, password);
+            // Gọi phương thức CheckCredentials từ LoginModel để kiểm tra thông tin đăng ký
+            bool isValidCredentials = RegisterModel.CheckEmail(email);
 
             if (isValidCredentials)
             {
-                // Xử lý khi thông tin đăng nhập hợp lệ
-                // Chẳng hạn, chuyển hướng đến trang chính
-                return RedirectToAction("Index", "Home");
+                // Lưu thông tin đăng ký vào TempData để truy cập từ trang RegisterInformation.cshtml
+                TempData["Email"] = email;
+                TempData["Password"] = password;
+                TempData["RepeatPassword"] = repeatpassword;
+
+                // Chuyển hướng đến trang RegisterInformation.cshtml
+                return View("~/Views/Register/RegisterInformation.cshtml");
             }
             else
             {
-                // Xử lý khi thông tin đăng nhập không hợp lệ
-                // Chẳng hạn, hiển thị thông báo lỗi
-                ViewBag.ErrorMessage = "Invalid email or password.";
+                // Xử lý khi thông tin đăng ký không hợp lệ
+                // Chẳng hạn, hiển thị lại trang đăng ký với thông báo lỗi
                 return View("Index");
             }
         }
+
+
+        [HttpPost]
+        public IActionResult RegisterInformation(string firstName, string lastName, string phone, string address)
+        {
+            TempData["firstName"] = firstName;
+            TempData["lastName"] = lastName;
+            TempData["phone"] = phone;
+            TempData["address"] = address;
+            return View("~/Views/Register/A.cshtml");
+        }
+
     }
 }

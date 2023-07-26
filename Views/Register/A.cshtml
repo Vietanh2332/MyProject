@@ -1,0 +1,62 @@
+@{
+    Layout = null;
+}
+@{
+    string email = TempData["Email"]?.ToString();
+    string password = TempData["Password"]?.ToString();
+    string repeatpassword = TempData["RepeatPassword"]?.ToString();
+    string firstName = TempData["firstName"]?.ToString();
+    string lastName = TempData["lastName"]?.ToString();
+    string phone = TempData["phone"]?.ToString();
+    string address = TempData["address"]?.ToString();
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyProject.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Register"
+                    asp-action="RegisterInformation">MyProject</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <section class="gradient-custom">
+        <div class="container py-2">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-2-strong card-registration"
+                        style="border-radius: 15px; box-shadow: 2px 4px 6px gray">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Register Information</h3>
+                            <p>Email: @email</p>
+                            <p>Password: @password</p>
+                            <p>Repeat Password: @repeatpassword</p>
+                            <p>Repeat Password: @firstName</p>
+                            <p>Repeat Password: @lastName</p>
+                            <p>Repeat Password: @phone</p>
+                            <p>Repeat Password: @address</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
