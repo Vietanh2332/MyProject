@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\V-ANH\\vana\\MyProject\\MyProject.csproj": {}
+    "D:\\Vana\\MyProject\\MyProject.csproj": {}
   },
   "projects": {
-    "D:\\V-ANH\\vana\\MyProject\\MyProject.csproj": {
+    "D:\\Vana\\MyProject\\MyProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\V-ANH\\vana\\MyProject\\MyProject.csproj",
+        "projectUniqueName": "D:\\Vana\\MyProject\\MyProject.csproj",
         "projectName": "MyProject",
-        "projectPath": "D:\\V-ANH\\vana\\MyProject\\MyProject.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\V-ANH\\vana\\MyProject\\obj\\",
+        "projectPath": "D:\\Vana\\MyProject\\MyProject.csproj",
+        "packagesPath": "C:\\Users\\Hello\\.nuget\\packages\\",
+        "outputPath": "D:\\Vana\\MyProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Hello\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -49,8 +49,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -62,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.316\\RuntimeIdentifierGraph.json"
         }
       }
     }

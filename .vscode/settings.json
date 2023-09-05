@@ -1,0 +1,4 @@
+{
+    "dotnet.autoDetect": "quiet",
+    "dotnet.version": "6.0"
+}
